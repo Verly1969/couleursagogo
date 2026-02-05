@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: conic-gradient(red, pink, purple, navy, blue, aqua, green, lime, yellow, orange);
+    background-repeat: no-repeat;
+}
+
+@keyframes colorAnimation {
+    0% {color: red;}
+    12% {color: pink;}
+    25% {color: yellow;}
+    50% {color: blue;}
+    75% {color: green;}
+    100% {color: orange;}
+}
+
+h1{
+    font-size: 4rem;
+    color: blue;
+    margin-top: 17rem;
+    animation-name: colorAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+h2,
+p{
+    text-align: center;
+}
+
+button{
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.text{
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
+.position{
+    margin-top: 7rem;
+    transition: margin-top 2s;
+}
+
+.boxButton {
+    display: flex;
+    justify-content: center;
+}
+
+#select:hover{
+    cursor: pointer;
+}
+
+#select option:hover{
+    cursor: pointer;
+}
+
+#boxColors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.color,
+.colortest {
+    width: 7rem;
+    height: 2rem;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.divDetails{
+    width: 200px;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#popup{
+    position: fixed;
+    width: 50%;
+    background-color: gray;
+    color: wheat;
+    text-align: center;
+    opacity: 1;
+    border: 1px solid red;
+    border-radius: 20px;
+    z-index: 999;
+    display: none;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.4);
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#liAlea,
+#liTeinte{
+    justify-content: center;
+    list-style-type: none;
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 15px;
+}
+
+@keyframes backgroundAnimation {
+    from {background-color: yellow;}
+    to {background-color: blue;}
+}
+
+#liAlea:hover,
+#liTeinte:hover{
+    color: bisque;
+    border-radius: 20px;
+    transition: 2s;
+    animation-name: backgroundAnimation;
+    animation-duration: 3s;
+    cursor: pointer;
+}
+
+#alea,
+#teinte{
+    width: 70%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: none;
+}
+
+#hex,
+#hsl,
+#rgb,
+#nuanceHex,
+#nuanceRgb,
+#nuanceHsl{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

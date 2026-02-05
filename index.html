@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couleurs à gogo</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="popup"></div>
+        <h1 id="h1" class="">Couleurs à gogo</h1>
+        <div id="menu">
+            <ul>
+                <li id="liAlea">Couleur aléatoire</li>
+                <li id="liTeinte">Couleurs par teinte</li>
+            </ul>
+        </div>
+        <div id="alea">
+            <h2>Couleur aléatoire</h2>
+            <p class="text">En cliquant sur le bouton ci-dessous, vous obtiendrez<br>une couleur aléatoire avec ses différents code.</p>
+            <div class="boxButton">
+                <button id="btnAlea">Nouvelle couleur</button>
+                <div id="colorAlea" class="color"></div>
+            </div>
+            <div id="boxCode">
+                <p id="codeMessage" class="text"></p>
+                <p id="hex"></p>
+                <p id="hsl"></p>
+                <p id="rgb"></p>
+            </div>
+        </div>
+        <div id="teinte">
+            <h2>Couleurs par teinte</h2>
+            <p>Sélectionnez une teinte et obtenez 10 nuances aléatoires</p>
+            <div class="boxButton">
+                <select id="select">
+                    <option value="" selected>Sélectionnez une teinte</option>
+                </select>
+                <div id="colorHue" class="color"></div>
+            </div>
+            <div>
+                <p id="pMessage"></p>
+                <div id="boxColors"></div>
+            </div>
+            <div id="colorsDetails">
+                <p id="nuanceMessage"></p>
+                <p id="nuanceHex"></p>
+                <p id="nuanceRgb"></p>
+                <p id="nuanceHsl"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
