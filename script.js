@@ -294,7 +294,7 @@ window.addEventListener("DOMContentLoaded", () => {
     
     hsl.addEventListener("mouseout", () => {
         hsl.style.backgroundColor = "antiquewhite";
-        hsl.style.color = "black";
+        hsl.style.color = "black";  
     })    
 
 
